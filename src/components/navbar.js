@@ -6,8 +6,6 @@ const Outer = styled.div`
   width: 100%;
   position: relative;
   background-color: white;
-  /* background-color: #1A344B; */
-  /* background-color: #A1C9EF; */
 `;
 
 const Logo = styled.a`
@@ -25,7 +23,7 @@ const Logo = styled.a`
     text-decoration: none;
     color: black;
   }
-  letter-spacing: -0.18em;
+  letter-spacing: -0.16em;
 `;
 
 const LeftSide = styled.div`

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react"
 import styled from "styled-components"
 import NavBar from "../components/navbar.js"
 
-import Me from "../assets/me.png"
+import Me from "../assets/me.jpg"
 
 const Section1 = styled.div`
   position: relative;
@@ -37,7 +37,16 @@ const Subheading = styled.div`
   color: black;
   text-align: center;
   font-family: 'Lora', serif;
-  font-size: 18px;
+  font-size: ${({ isDesktop }) => isDesktop ? '28px' : '28px'};
+`;
+
+const Clickable = styled.a`
+  text-decoration: none;
+  text-align: center;
+`;
+
+const Image = styled.img`
+  max-width: 80%;
 `;
 
 const Center = styled.div`
@@ -64,13 +73,16 @@ export default function Home() {
   return (
     <>
       <NavBar />
-      <div style={{height: isDesktop ? "40px" : "0px"}} />
+      <div style={{height: isDesktop ? "0px" : "0px"}} />
       <Outer style={{height: "400px"}}>
         <Section1 style={{height: "400px"}}>
           <div style={{height: "0px"}} />
-          <Heading isDesktop={isDesktop}>Hi, I'm Andre Pineda!</Heading>
+          <Heading isDesktop={isDesktop}>Hello World!</Heading>
           <div style={{height: "20px"}} />
-          <Center><img src={Me} alt="Photo of Andre Pineda" /></Center>
+          <Subheading isDesktop={isDesktop}>I'm Andre Pineda</Subheading>
+          <div style={{height: "60px"}} />
+          <Center><Clickable href="http://linkedin.com/in/andre-pineda"><Image src={Me} alt="Photo of Andre Pineda" /></Clickable></Center>
+          <div style={{height: "80px"}} />
         </Section1>
       </Outer>
     </>
