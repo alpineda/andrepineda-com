@@ -46,7 +46,8 @@ const Clickable = styled.a`
 `;
 
 const Image = styled.img`
-  max-width: 80%;
+  width: 80%;
+  max-width: 1000px;
 `;
 
 const Center = styled.div`
