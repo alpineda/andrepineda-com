@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react"
 import styled from "styled-components"
 import NavBar from "../components/navbar.js"
 
-import ResumeFile from "../assets/resume.pdf"
+import ResumeFile from "../assets/Andre Pineda Resume 2.pdf"
 
 const Viewer = styled.embed`
   width: 100%;
